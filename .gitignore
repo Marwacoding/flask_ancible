@@ -1,0 +1,9 @@
+flask-ancible_key.pem
+.pem
+.log
+.env
+.pyc
+.DS_Store
+postgress-ancible.log
+__pycache__/
+postgres.pyc
