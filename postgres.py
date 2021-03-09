@@ -24,25 +24,24 @@ def create_table():
 
     #cursor.execute("DROP TABLE my_table")
     cursor.execute("CREATE TABLE IF NOT EXISTS my_table (id serial PRIMARY KEY)")
-    print("key")
     conn.commit()
 
     logging.info("[POSTGRES] Creation table : end")
 
 create_table()
 
-def insert_id():
-    logging.info("[POSTGRES] Insert data in table : start")
+# def insert_id():
+#     logging.info("[POSTGRES] Insert data in table : start")
 
-    try:
-        insert = "INSERT INTO my_table (id) values(default)"
-        #print('value of carpet table',value)
-        cursor.execute(insert)
+#     try:
+#         insert = "INSERT INTO my_table (id) values(default)"
+#         #print('value of carpet table',value)
+#         cursor.execute(insert)
 
-        conn.commit()
-    except Exception as e:
-        logging.error('[POSTGRES] ERROOOOR !! empty list, didnt file table' +str(e))
+#         conn.commit()
+#     except Exception as e:
+#         logging.error('[POSTGRES] ERROOOOR !! empty list, didnt file table' +str(e))
 
-        logging.info("[POSTGRES] Insert data in table : end")
+#         logging.info("[POSTGRES] Insert data in table : end")
 
-insert_id()
+# insert_id()
